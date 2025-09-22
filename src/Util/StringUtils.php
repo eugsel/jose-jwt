@@ -105,7 +105,7 @@ class StringUtils
      *
      * @return string
      */
-    public static function payload2string($payload, JsonMapper $mapper = null)
+    public static function payload2string($payload, ?JsonMapper $mapper = null)
     {
         if (is_array($payload)) {
             return json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_NUMERIC_CHECK);

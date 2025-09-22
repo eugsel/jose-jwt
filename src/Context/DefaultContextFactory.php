@@ -32,7 +32,7 @@ class DefaultContextFactory implements ContextFactory
     /**
      * @param RandomGenerator $randomGenerator
      */
-    public function __construct(RandomGenerator $randomGenerator = null)
+    public function __construct(?RandomGenerator $randomGenerator = null)
     {
         $this->randomGenerator = $randomGenerator;
     }
@@ -42,7 +42,7 @@ class DefaultContextFactory implements ContextFactory
      *
      * @return DefaultContextFactory
      */
-    public function setRandomGenerator(RandomGenerator $randomGenerator = null)
+    public function setRandomGenerator(?RandomGenerator $randomGenerator = null)
     {
         $this->randomGenerator = $randomGenerator;
 

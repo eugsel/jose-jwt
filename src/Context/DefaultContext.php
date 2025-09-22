@@ -74,7 +74,7 @@ class DefaultContext implements Context
      *
      * @return DefaultContext
      */
-    public function setJsonMapper(JsonMapper $jsonMapper = null)
+    public function setJsonMapper(?JsonMapper $jsonMapper = null)
     {
         $this->jsonMapper = $jsonMapper;
 
