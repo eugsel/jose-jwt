@@ -25,7 +25,7 @@ class FallbackRandomGenerator implements RandomGenerator
      * @param RandomGenerator $first
      * @param RandomGenerator $second
      */
-    public function __construct(RandomGenerator $first = null, RandomGenerator $second = null)
+    public function __construct(?RandomGenerator $first = null, ?RandomGenerator $second = null)
     {
         $this->first = $first;
         $this->second = $second;
@@ -44,7 +44,7 @@ class FallbackRandomGenerator implements RandomGenerator
      *
      * @return FallbackRandomGenerator
      */
-    public function setFirst(RandomGenerator $first = null)
+    public function setFirst(?RandomGenerator $first = null)
     {
         $this->first = $first;
 
@@ -64,7 +64,7 @@ class FallbackRandomGenerator implements RandomGenerator
      *
      * @return FallbackRandomGenerator
      */
-    public function setSecond(RandomGenerator $second = null)
+    public function setSecond(?RandomGenerator $second = null)
     {
         $this->second = $second;
 
