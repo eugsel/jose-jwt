@@ -11,6 +11,8 @@
 
 namespace Tmilos\JoseJwt\Util;
 
+use ArrayIterator;
+
 class ParameterBag implements \IteratorAggregate, \Countable
 {
     /**
@@ -103,7 +105,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
     /**
      * @return \ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): ArrayIterator
     {
         return new \ArrayIterator($this->parameters);
     }
@@ -111,7 +113,7 @@ class ParameterBag implements \IteratorAggregate, \Countable
     /**
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->parameters);
     }
